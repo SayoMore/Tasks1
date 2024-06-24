@@ -1,32 +1,26 @@
 import React from "react";
 import "../styles/JobItem.css";
-// import Filter from "./Filter";
-import { useState } from "react";
 
 const JobItem = ({ job, buttonHandler }) => {
-  const id = job._id;
   const title = job.jobTitle;
   const skills = job.skills;
   const company = job.company.companyName;
-  const location = job.location;
-  const formattedAddress = job.formattedAddress;
   const companyImage = job.companyImage;
 
-  const skillset = skills.map((item) => {
-    return (
-      <>
-        <button
-          onClick={() => {
-            buttonHandler(item);
-          }}
-          value={item}
-          key={item}
-        >
-          {item}
-        </button>
-      </>
-    );
-  });
+  const skillset = skills.map((item) => (
+    <button
+      onClick={() => {
+        buttonHandler(item);
+        filterValue(item);
+      }}
+      value={item}
+      key={item}
+      className="skillbtn"
+    >
+      {item}
+    </button>
+  ));
+
   return (
     <div className="job-item">
       <div className="flex1">
