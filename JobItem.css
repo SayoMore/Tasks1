@@ -1,0 +1,52 @@
+.job-item {
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 50px;
+}
+.job-item:first-child {
+  margin-top: 8em;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+}
+.image1 {
+  width: 8em;
+  border-radius: 50%;
+}
+.flex1 {
+  display: flex;
+  gap: 1em;
+}
+
+.para {
+  display: flex;
+  height: 4em;
+  gap: 1em;
+}
+
+.skillbtn {
+  background-color: rgb(224, 237, 243);
+  border: none;
+  border-radius: 5px;
+  padding: 2% 5%;
+  color: rgb(13, 112, 157);
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.skillbtn:active {
+  background-color: rgb(114, 198, 237);
+  transition: transform 5s;
+}
+
+.skillbtn:hover {
+  box-shadow: 4px 5px rgb(219, 217, 217);
+  background-color: rgb(114, 198, 237);
+  color: white;
+}
