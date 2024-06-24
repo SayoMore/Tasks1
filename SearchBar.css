@@ -1,0 +1,53 @@
+.search-bar {
+  background-color: white;
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 27%;
+  left: 7%;
+}
+@media only screen and (max-width: 1800px) {
+  .search-bar {
+    top: 22vh;
+    left: 9vw;
+  }
+}
+.searchbtn {
+  background-color: rgb(224, 237, 243);
+  padding: 1em;
+  border: none;
+  color: rgb(13, 112, 157);
+  font-weight: 750;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+
+.searchbtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 5px rgb(219, 217, 217);
+}
+
+/* .searchTxt {
+  background-color: white;
+  padding: 40%;
+} */
+
+.flex3 {
+  display: flex;
+  justify-content: space-between;
+}
+.clear {
+  color: rgb(23, 150, 210);
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-size: large;
+}
+.clear:hover {
+  text-decoration: underline;
+}
